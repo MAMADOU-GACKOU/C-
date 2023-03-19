@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FenetrePrincipale</class>
+ <widget class="QMainWindow" name="FenetrePrincipale">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1214</width>
+    <height>788</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FenetrePrincipale</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="afficherTexte">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>1041</width>
+      <height>351</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BAfficher">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>40</y>
+      <width>151</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Listes des contacts</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="BNombrecontact">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>10</y>
+      <width>511</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BAffichetousInteraction">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>460</y>
+      <width>161</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Listes des intéractions</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boutontodo">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>460</y>
+      <width>121</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Listes des taches</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditIntraction">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>450</y>
+      <width>421</width>
+      <height>251</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditTodo">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>460</y>
+      <width>441</width>
+      <height>251</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>401</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Panneau d'affichage sur tout ce qui concerne   contact :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>420</y>
+      <width>421</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Panneau d'affichage sur tout ce qui concerne l'intéraction :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>420</y>
+      <width>381</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Panneau d'affichage sur  tout ce qui concerne le TODO :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Lheure">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>716</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>hh:mm:ss</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Bjson">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>140</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>JSon pour contact</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BJsonInteraction">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>570</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>JSon Intéraction</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1214</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuContact">
+    <property name="title">
+     <string>Contact</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionCr_er_un_contact"/>
+    <addaction name="actionModifier_un_contact"/>
+    <addaction name="actionSupprimer_un_contact"/>
+   </widget>
+   <widget class="QMenu" name="menuInteraction">
+    <property name="title">
+     <string>Interaction</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionAjouter_une_int_raction"/>
+    <addaction name="actionListes_d_int_raction"/>
+   </widget>
+   <widget class="QMenu" name="menuRechercher">
+    <property name="title">
+     <string>Rechercher</string>
+    </property>
+    <addaction name="actionchercher_un_contact"/>
+   </widget>
+   <widget class="QMenu" name="menuRequetes">
+    <property name="title">
+     <string>Requetes</string>
+    </property>
+    <addaction name="actionInteraction_entre_deux_dates"/>
+    <addaction name="actionInteraction_d_un_contact_entre_deux_dates"/>
+    <addaction name="actionCollecteDesTaches"/>
+    <addaction name="actionTaches_pour_tous_les_contacts"/>
+   </widget>
+   <widget class="QMenu" name="menuApropos">
+    <property name="title">
+     <string>Apropos</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionApropos"/>
+   </widget>
+   <addaction name="menuContact"/>
+   <addaction name="menuInteraction"/>
+   <addaction name="menuRechercher"/>
+   <addaction name="menuRequetes"/>
+   <addaction name="menuApropos"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCr_er_un_contact">
+   <property name="text">
+    <string>Créer un contact</string>
+   </property>
+  </action>
+  <action name="actionModifier_un_contact">
+   <property name="text">
+    <string>Modifier un contact</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_un_contact">
+   <property name="text">
+    <string>Supprimer un contact</string>
+   </property>
+  </action>
+  <action name="actionAjouter_une_int_raction">
+   <property name="text">
+    <string>Ajouter une intéraction</string>
+   </property>
+  </action>
+  <action name="actionListes_d_int_raction">
+   <property name="text">
+    <string>Listes d'intéraction</string>
+   </property>
+  </action>
+  <action name="actionAjouter_des_taches">
+   <property name="text">
+    <string>Ajouter des taches</string>
+   </property>
+  </action>
+  <action name="actionchercher_un_contact">
+   <property name="text">
+    <string>chercher un contact</string>
+   </property>
+  </action>
+  <action name="actionInteraction_entre_deux_dates">
+   <property name="text">
+    <string>Interaction entre deux dates</string>
+   </property>
+  </action>
+  <action name="actionCollecteDesTaches">
+   <property name="text">
+    <string>Collect des taches pour un contact</string>
+   </property>
+  </action>
+  <action name="actionTaches_pour_tous_les_contacts">
+   <property name="text">
+    <string>Taches pour tous les contacts</string>
+   </property>
+  </action>
+  <action name="actionNombre_de_contact">
+   <property name="text">
+    <string>Nombre de contact</string>
+   </property>
+  </action>
+  <action name="actionInteraction_d_un_contact_entre_deux_dates">
+   <property name="text">
+    <string>Interaction d'un contact entre deux dates</string>
+   </property>
+  </action>
+  <action name="actionApropos">
+   <property name="text">
+    <string>Apropos</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
